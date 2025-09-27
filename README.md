@@ -7,5 +7,4 @@ Features:
 	•	Clean HTML + CSS structure
 	•	Responsive design (mobile & desktop)
 	•	Dark theme with neon accents + glassmorphism cards
-	•	Subtle hover/fade animations
-	•	GitHub Pages/Netlify deploy-ready
+	•	Subtle hover/fade animation
