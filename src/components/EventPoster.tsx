@@ -1,37 +1,37 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, Clock, MapPin, Music, Zap, Utensils, Trophy } from "lucide-react";
+import { Calendar, Clock, MapPin, Code, Utensils, BookOpen, Music } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
-import djImage from "@/assets/dj-night.jpg";
-import danceImage from "@/assets/dance-battle.jpg";
+import hackathonImage from "@/assets/hackathon.jpg";
 import foodImage from "@/assets/food-stalls.jpg";
-import competitionsImage from "@/assets/competitions.jpg";
+import workshopsImage from "@/assets/workshops.jpg";
+import djImage from "@/assets/dj-night.jpg";
 
 const EventPoster = () => {
   const highlights = [
     {
-      title: "DJ Night",
-      description: "World-class DJs spinning the hottest electronic beats",
-      image: djImage,
-      icon: Music,
-    },
-    {
-      title: "Dance Battle",
-      description: "Epic dance competitions with amazing prizes",
-      image: danceImage,
-      icon: Zap,
+      title: "36hrs Hackathon",
+      description: "Non-stop coding marathon with amazing prizes",
+      image: hackathonImage,
+      icon: Code,
     },
     {
       title: "Food Stalls",
-      description: "Gourmet street food from around the world",
+      description: "Delicious food and refreshments to fuel your coding",
       image: foodImage,
       icon: Utensils,
     },
     {
-      title: "Competitions",
-      description: "Gaming tournaments and interactive challenges",
-      image: competitionsImage,
-      icon: Trophy,
+      title: "Tech Workshops",
+      description: "Learn cutting-edge technologies from industry experts",
+      image: workshopsImage,
+      icon: BookOpen,
+    },
+    {
+      title: "DJ Night",
+      description: "Unwind with electrifying music and entertainment",
+      image: djImage,
+      icon: Music,
     },
   ];
 
@@ -45,30 +45,30 @@ const EventPoster = () => {
         <div className="absolute inset-0 bg-background/60 backdrop-blur-sm"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6 animate-fade-in">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 gradient-text animate-glow">
-            NeonFest 2024
+            CodingNinja fest'25
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-muted-foreground font-light">
-            The Ultimate Electronic Music Experience
+            The Ultimate Tech Fest Experience
           </p>
           
           <div className="flex flex-col md:flex-row gap-6 mb-12 justify-center items-center">
             <div className="flex items-center gap-2 glass-card px-6 py-3">
               <Calendar className="text-neon-pink" size={20} />
-              <span className="font-medium">December 15, 2024</span>
+              <span className="font-medium">13th Oct 2025</span>
             </div>
             <div className="flex items-center gap-2 glass-card px-6 py-3">
               <Clock className="text-neon-green" size={20} />
-              <span className="font-medium">7:00 PM - 3:00 AM</span>
+              <span className="font-medium">3:30 - 9:30 PM</span>
             </div>
             <div className="flex items-center gap-2 glass-card px-6 py-3">
               <MapPin className="text-neon-blue" size={20} />
-              <span className="font-medium">Metro Arena</span>
+              <span className="font-medium">TP Ganeshan Audi</span>
             </div>
           </div>
           
           <div className="animate-float">
             <Button className="hero-button text-lg">
-              Experience the Future
+              Join the Tech Revolution
             </Button>
           </div>
         </div>
@@ -78,7 +78,7 @@ const EventPoster = () => {
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">
-            Festival Highlights
+            Fest Highlights
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -117,10 +117,10 @@ const EventPoster = () => {
       <section className="py-20 text-center">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 gradient-text">
-            Ready to Join the Experience?
+            Ready to Code the Future?
           </h2>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Don't miss out on the most electrifying festival of the year. Limited tickets available.
+            Join us for the most innovative tech fest of the year. Limited spots available.
           </p>
           <Button className="hero-button text-xl px-12 py-6 animate-glow">
             Register Now
@@ -149,8 +149,8 @@ const EventPoster = () => {
           
           <div className="text-center">
             <div className="flex justify-center gap-6 mb-8">
-              {['Instagram', 'Twitter', 'Facebook', 'TikTok'].map((social) => (
-                <Button 
+              {['Instagram', 'Twitter'].map((social) => (
+                <Button
                   key={social}
                   variant="outline" 
                   size="sm"
@@ -161,7 +161,7 @@ const EventPoster = () => {
               ))}
             </div>
             <p className="text-muted-foreground">
-              © 2024 NeonFest. All rights reserved. | Follow us for updates and exclusive content.
+              © 2025 CodingNinja fest'25. All rights reserved. | Follow us for updates and exclusive content.
             </p>
           </div>
         </div>
